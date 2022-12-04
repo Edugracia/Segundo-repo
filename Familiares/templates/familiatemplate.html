@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    <h1> Familiares </h1>
+
+    <p> Nombre = {{ nombre }} </p>
+    <p> Edad = {{ edad }} </p>
+    <p> Fecha = {{ fecha }} </p>
+
+
+    <h2> Lista de familiares </h2>
+    <p>
+    {% for clave, valor in familiares.items %}
+        {{clave}} : {{valor}}
+    {% endfor %}
+    </p>
+   
+
+</body>
+</html>
